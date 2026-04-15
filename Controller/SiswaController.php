@@ -10,7 +10,7 @@ class siswa {
       $database = "sekolah";
       $user = "root"; 
       $password = "";
-
+    
       $this->pdo = new PDO("mysql:host={$host}; dbname={$database}", $user,$password);
     }
 
@@ -23,6 +23,15 @@ class siswa {
 
         $result = $stmt->fetchAll();
         return $result;
+    }
+
+    public function addsiswa($nama_siswa, $email, $jenis_kelamin)
+    {
+        $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $query = "INSERT INTO siswa ( nama_siswa, email, jenis_kelamin) VALUES ( '".$nama_siswa."', '".$email."', '".$jenis_kelamin."')";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->execute();
+        return $stmt->rowCount();
     }
 
 }

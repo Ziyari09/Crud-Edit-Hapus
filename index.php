@@ -15,6 +15,7 @@
 <body>
 
     <div class="container mt-5">
+        <a href="addsiswa.php" class="btn-success p-1 rounded text-decoration-none">Tambah Siswa</a>
         <table class="table">
             <thead>
                 <tr>
@@ -22,6 +23,7 @@
                     <th scope="col">Nama</th>
                     <th scope="col">Email</th>
                     <th scope="col">Jenis Kelamin</th>
+                   
                 </tr>
             </thead>
             <tbody>
@@ -39,6 +41,7 @@
                         <td><?php echo $item['nama_siswa'] ?></td>
                         <td><?php echo $item['email'] ?></td>
                         <td><?php echo $item['jenis_kelamin'] ?></td>
+                        
                         
                        
                     </tr>
