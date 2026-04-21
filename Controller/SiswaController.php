@@ -34,4 +34,13 @@ class siswa {
         return $stmt->rowCount();
     }
 
+    public function deleteSiswa($id)
+    {
+        $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $query = "DELETE FROM siswa WHERE id = '" . $id . "'";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->execute();
+        return $stmt->rowCount();
+    }
+
 }

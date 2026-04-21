@@ -24,6 +24,10 @@ if (isset($_POST['submit'])) {
 
 <body>
 
+    <div class="mt-3 ms-5 w-50">
+         <a href="index.php" class="text-decoration-none btn-primary p-2 rounded-3 mt-5 ">⬅</a>
+    </div>
+   
     <div class="container mt-5 ">
         <h1>Tambah Siswa</h1>
         <form action="" method="POST" class="mt-5">

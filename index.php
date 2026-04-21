@@ -23,7 +23,7 @@
                     <th scope="col">Nama</th>
                     <th scope="col">Email</th>
                     <th scope="col">Jenis Kelamin</th>
-                   
+                    <th scope="col">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -41,7 +41,11 @@
                         <td><?php echo $item['nama_siswa'] ?></td>
                         <td><?php echo $item['email'] ?></td>
                         <td><?php echo $item['jenis_kelamin'] ?></td>
-                        
+                        <td>
+                            <a href="#" class="btn btn-warning">Edit</a>
+                            <a href="deleteSiswa.php?id=<?= $item['id'] ?>" class="btn btn-danger">Hapus</a>
+
+                        </td>
                         
                        
                     </tr>
