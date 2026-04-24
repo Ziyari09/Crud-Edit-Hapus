@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     $addsiswa = $siswa->addsiswa($_POST['nama_siswa'], $_POST['email'], $_POST['jenis_kelamin']);
     if ($addsiswa) {
       echo '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">';
-      echo '<div class="alert alert-success" role="alert">Siswa Berhasil Dihapus!</div>';
+      echo '<div class="alert alert-success" role="alert">Siswa Berhasil Diltambahkan!</div>';
     
     
     echo "<script>

@@ -42,7 +42,7 @@
                         <td><?php echo $item['email'] ?></td>
                         <td><?php echo $item['jenis_kelamin'] ?></td>
                         <td>
-                            <a href="#" class="btn btn-warning">Edit</a>
+                            <a href="editSiswa.php?id=<?= $item['id'] ?>" class="btn btn-warning">Edit</a>
                             <a href="deleteSiswa.php?id=<?= $item['id'] ?>" class="btn btn-danger">Hapus</a>
 
                         </td>
